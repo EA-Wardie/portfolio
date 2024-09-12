@@ -5,6 +5,7 @@
 	import githubLogo from '$lib/assets/github.svg';
 	import redditLogo from '$lib/assets/reddit.svg';
 	import discordLogo from '$lib/assets/discord.svg';
+	import { base } from '$app/paths';
 
 	let { children } = $props();
 </script>
@@ -17,7 +18,7 @@
 
 <header class="h-14 grow-0 shrink-0 flex items-center justify-between border-b px-4">
 	<div class="h-full flex items-center gap-4">
-		<a href="/"><h3>EA</h3></a>
+		<a href="{base}/"><h3>EA</h3></a>
 		<Separator orientation="vertical" />
 	</div>
 	<nav class="h-full flex items-center gap-4">
@@ -47,6 +48,6 @@
 	</div>
 	<nav class="h-full flex items-center gap-4">
 		<Separator orientation="vertical" />
-		<a class="hover:underline" href="/contact">Contact Me</a>
+		<a class="hover:underline" href="{base}/contact">Contact Me</a>
 	</nav>
 </footer>
