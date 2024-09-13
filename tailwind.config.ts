@@ -59,6 +59,9 @@ const config: Config = {
 				sans: [...fontFamily.sans],
 			},
 		},
+		boxShadow: {
+			sm: '0 0 transparent',
+		},
 	},
 };
 
