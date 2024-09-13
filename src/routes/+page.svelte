@@ -18,7 +18,7 @@
 	<p>
 		With a strong command of modern frameworks.
 		I specialize in creating seamless web experiences that are both
-		<span class="text-emerald-400">functional</span>and <span class="text-sky-400">visually appealing</span>.
+		<span class="text-emerald-400">functional</span> and <span class="text-sky-400">visually appealing</span>.
 		I am committed to writing clean, maintainable code and staying
 		updated with the latest trends in web development.
 	</p>
@@ -76,10 +76,12 @@
 					<h4>Freelance</h4>
 					<Badge class="rounded-full">Ongoing</Badge>
 				</div>
-				<p>As a freelancer, I’ve gained valuable experience by working independently with diverse clients and
+				<article>
+					As a freelancer, I’ve gained valuable experience by working independently with diverse clients and
 					projects. This has
 					sharpened my ability to manage time effectively, meet tight deadlines, and adapt to different
-					requirements.</p>
+					requirements.
+				</article>
 			</div>
 			<Separator class="w-full lg:max-w-xs" />
 			<div>
@@ -87,11 +89,13 @@
 					<a class="text-green-400 hover:underline" href="https://xtrapolate.io/"><h4>Xtrapolate</h4></a>
 					<Badge class="rounded-full">2018 - 2019</Badge>
 				</div>
-				<p>During my time at Xtrapolate, I gained valuable experience working primarily with Laravel and Vue on
+				<article>
+					During my time at Xtrapolate, I gained valuable experience working primarily with Laravel and Vue on
 					a variety of web
 					development projects. This role allowed me to deepen my expertise in building efficient back-end
 					systems with Laravel
-					while creating dynamic, responsive front-end applications using Vue.</p>
+					while creating dynamic, responsive front-end applications using Vue.
+				</article>
 			</div>
 			<Separator class="w-full lg:max-w-xs" />
 			<div>
@@ -99,11 +103,13 @@
 					<a class="text-cyan-400 hover:underline" href="https://www.fitt.ai/"><h4>Fitt Talent</h4></a>
 					<Badge class="rounded-full">2019 - 2023</Badge>
 				</div>
-				<p>At Fitt Talent, I specialized in building dynamic, real-time KPI software using Laravel and Vue to
+				<article>
+					At Fitt Talent, I specialized in building dynamic, real-time KPI software using Laravel and Vue to
 					manage employee
 					ranking and performance metrics. My work focused on developing systems that could process and
 					display real-time data
-					efficiently, ensuring accurate and responsive workplace performance evaluations.</p>
+					efficiently, ensuring accurate and responsive workplace performance evaluations.
+				</article>
 			</div>
 			<Separator class="w-full lg:max-w-xs" />
 			<div>
@@ -112,11 +118,13 @@
 						Companies</h4></a>
 					<Badge class="rounded-full">2023 - Now</Badge>
 				</div>
-				<p>At Snappi Group of Companies, I focus on developing and maintaining e-commerce platforms, working
+				<article>
+					At Snappi Group of Companies, I focus on developing and maintaining e-commerce platforms, working
 					primarily on web
 					development projects that enhance online shopping experiences. I built and maintain scalable,
 					user-friendly solutions,
-					that streamline transactions, optimize product displays, and improved customer engagement.</p>
+					that streamline transactions, optimize product displays, and improved customer engagement.
+				</article>
 			</div>
 		</Card.Content>
 	</Card.Root>

@@ -21,7 +21,7 @@
 <ModeWatcher />
 
 <header
-	class="sticky top-0 h-9 grow-0 shrink-0 bg-[hsl(var(--card))] dark:bg-neutral-900 flex items-center justify-between border-y">
+	class="sticky top-0 h-9 grow-0 shrink-0 bg-[hsl(var(--card))]/80 dark:bg-neutral-900/80 backdrop-blur flex items-center justify-between border-y">
 	<nav class="grow flex">
 		<Button variant="link" href="{base}/">Me</Button>
 		<Separator orientation="vertical" />
@@ -82,7 +82,7 @@
 	{@render children()}
 </main>
 <footer
-	class="sticky bottom-0 h-9 grow-0 shrink-0 bg-[hsl(var(--card))] dark:bg-neutral-900 flex items-center justify-between border-y px-4">
+	class="sticky bottom-0 h-9 grow-0 shrink-0 bg-[hsl(var(--card))]/80 dark:bg-neutral-900/80 backdrop-blur flex items-center justify-between border-y px-4">
 	<p>{new Date().getFullYear()}</p>
 	<Separator orientation="vertical" class="ml-4" />
 	<div class="grow"></div>
