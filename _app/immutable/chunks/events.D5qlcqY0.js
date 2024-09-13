@@ -1,0 +1,1 @@
+import{c as a}from "./index-client.ITrb5yZo.js";function i(){const n=a();return t=>{const{originalEvent:e}=t.detail,{cancelable:c}=t,r=e.type;n(r,{originalEvent:e,currentTarget:e.currentTarget},{cancelable:c})||t.preventDefault()}}export{i as c};
