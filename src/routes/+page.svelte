@@ -5,32 +5,22 @@
 </script>
 
 <section>
-	<h1>Edward van Tonder</h1>
+	<h1><span class="text-sky-500">E</span>dward van <span class="text-emerald-500">T</span>onder</h1>
 	<p>Welcome to my developer profile!</p>
 </section>
 
-<section class="w-full max-w-2xl text-justify px-1">
-	<h3 class="text-teal-500">Who am I?</h3>
+<section class="w-full max-w-xl text-justify px-0.5 sm:px-0">
 	<p>
-		I am a <span class="text-rose-500">passionate</span> front-end developer with a focus on building dynamic and
+		I am a <span class="text-rose-400">passionate</span> front-end developer with a focus on building dynamic and
 		responsive user interfaces.
 	</p>
 	<br>
 	<p>
-		With a strong command of modern frameworks like
-		<a class="text-green-500 hover:underline" href="https://vuejs.org/" target="_blank">Vue</a>,
-		<a class="text-blue-400 hover:underline" href="https://ionicframework.com/" target="_blank">Ionic</a>,
-		<a class="text-violet-500 hover:underline" href="https://astro.build/" target="_blank">Astro</a>and
-		<a class="text-orange-400 hover:underline" href="https://svelte.dev/" target="_blank">Svelte</a>
-		I specialize in creating seamless web experiences that are both functional and visually appealing.
+		With a strong command of modern frameworks.
+		I specialize in creating seamless web experiences that are both
+		<span class="text-emerald-400">functional</span>and <span class="text-sky-400">visually appealing</span>.
 		I am committed to writing clean, maintainable code and staying
-		updated with the <span class="text-amber-400">latest trends</span> in web development.
-	</p>
-	<br>
-	<p>
-		My expertise in <a class="text-sky-400 hover:underline" href="https://tailwindcss.com/" target="_blank">TailwindCSS</a>
-		allows me to design sleek and scalable UIs with ease, while my interest in Laravel enables me to integrate
-		powerful backend functionalities into my projects.
+		updated with the latest trends in web development.
 	</p>
 </section>
 
@@ -41,9 +31,11 @@
 			<Card.Description>The early days</Card.Description>
 		</Card.Header>
 		<Card.Content>
-			I successfully completed my formal education, where I gained foundational knowledge and skills that have
-			shaped my personal and
-			professional development.
+			<blockquote class="prose">
+				I successfully completed my formal education, where I gained foundational knowledge and skills that have
+				shaped my personal and
+				professional development.
+			</blockquote>
 		</Card.Content>
 	</Card.Root>
 	<Card.Root>
@@ -52,9 +44,11 @@
 			<Card.Description>My time at university</Card.Description>
 		</Card.Header>
 		<Card.Content>
-			I completed my university education with a degree in Computer Science & Information Technology, where I
-			gained in-depth
-			knowledge of software development, algorithms, and data structures.
+			<blockquote>
+				I completed my university education with a degree in Computer Science & Information Technology, where I
+				gained in-depth
+				knowledge of software development, algorithms, and data structures.
+			</blockquote>
 		</Card.Content>
 	</Card.Root>
 	<Card.Root>
@@ -63,9 +57,12 @@
 			<Card.Description>Just work experience</Card.Description>
 		</Card.Header>
 		<Card.Content>
-			With 7 years of hands-on experience in web development, I’ve had the opportunity to work on a diverse range
-			of projects,
-			building and optimizing websites and web applications for various industries.
+			<blockquote>
+				With 7 years of hands-on experience in web development, I’ve had the opportunity to work on a diverse
+				range
+				of projects,
+				building and optimizing websites and web applications for various industries.
+			</blockquote>
 		</Card.Content>
 	</Card.Root>
 	<Card.Root class="md:col-span-3">
