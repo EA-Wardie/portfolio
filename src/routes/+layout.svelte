@@ -14,20 +14,16 @@
 	let { children } = $props();
 </script>
 
-<svelte:head>
-	<title>Portfolio | EA-Wardie</title>
-</svelte:head>
-
 <ModeWatcher />
 
 <header
 	class="sticky top-0 h-9 grow-0 shrink-0 bg-[hsl(var(--card))]/80 dark:bg-neutral-900/80 backdrop-blur flex items-center justify-between border-y">
 	<nav class="grow flex">
-		<Button variant="link" href="{base}/">Me</Button>
+		<Button variant="ghost" href="{base}/">Me</Button>
 		<Separator orientation="vertical" />
-		<Button variant="link" href="{base}/skills">Skills</Button>
+		<Button variant="ghost" href="{base}/skills">Skills</Button>
 		<Separator orientation="vertical" />
-		<Button variant="link" href="{base}/contact">Contact</Button>
+		<Button variant="ghost" href="{base}/contact">Contact</Button>
 		<Separator orientation="vertical" />
 	</nav>
 	<nav class="shrink h-full flex items-center">

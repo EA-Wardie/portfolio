@@ -4,6 +4,10 @@
 	import { Separator } from '$lib/components/ui/separator';
 </script>
 
+<svelte:head>
+	<title>Me | EA-Wardie</title>
+</svelte:head>
+
 <section>
 	<h1><span class="text-sky-500">E</span>dward van <span class="text-emerald-500">T</span>onder</h1>
 	<p>Welcome to my developer profile!</p>
