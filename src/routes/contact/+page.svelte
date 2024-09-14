@@ -7,6 +7,10 @@
 	import { enhance } from '$app/forms';
 </script>
 
+<svelte:head>
+	<title>Contact | EA-Wardie</title>
+</svelte:head>
+
 <section class="text-center">
 	<h1>Contact Me</h1>
 </section>

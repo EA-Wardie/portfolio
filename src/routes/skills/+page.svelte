@@ -32,6 +32,10 @@
 	import Naive from '$lib/icons/Naive.svelte';
 </script>
 
+<svelte:head>
+	<title>Skills | EA-Wardie</title>
+</svelte:head>
+
 <section>
 	<h1>Skills</h1>
 	<p>All the important things</p>
