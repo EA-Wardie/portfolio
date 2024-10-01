@@ -82,8 +82,6 @@
 	<p>{new Date().getFullYear()}</p>
 	<Separator orientation="vertical" class="ml-4" />
 	<div class="grow"></div>
-	<Separator orientation="vertical" class="mr-4" />
-	<p>Made with <a class="text-orange-500 hover:underline" href="https://kit.svelte.dev/" target="_blank">
-		SvelteKit
-	</a></p>
+	<Separator orientation="vertical" />
+	<Button variant="ghost" href="https://kit.svelte.dev/" class="gap-1"><p>Made with</p><p class="text-orange-500">SvelteKit</p></Button>
 </footer>
