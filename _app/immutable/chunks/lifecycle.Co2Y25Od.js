@@ -1,0 +1,1 @@
+import{u as r,e,f as c,i,r as f,g as l,j as u,k as _}from "./runtime.oTXMfI1T.js";function g(){const s=c,n=s.l.u;n&&(n.b.length&&r(()=>{a(s),f(n.b)}),e(()=>{const o=i(()=>n.m.map(_));return()=>{for(const t of o)typeof t=="function"&&t()}}),n.a.length&&e(()=>{a(s),f(n.a)}))}function a(s){if(s.l.s)for(const n of s.l.s)l(n);u(s.s)}export{g as i};

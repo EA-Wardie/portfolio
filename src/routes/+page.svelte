@@ -4,6 +4,7 @@
 	import { Badge } from '$lib/components/ui/badge';
 	import { Separator } from '$lib/components/ui/separator';
 	import Loader from '$lib/icons/Loader.svelte';
+	import { base } from '$app/paths';
 </script>
 
 <svelte:head>
@@ -33,7 +34,7 @@
 	</div>
 	<Card.Root class="w-fit p-4">
 		<Avatar.Root class="w-64 h-64 rounded-none" delayMs={500}>
-			<Avatar.Image src="/profile_image.jpg" />
+			<Avatar.Image src="{base}/profile_image.jpg" />
 			<Avatar.Fallback class="rounded-none bg-transparent">
 				<Loader class="w-20 h-20" />
 			</Avatar.Fallback>
