@@ -17,12 +17,14 @@
 <ModeWatcher />
 
 <header
-	class="sticky top-0 h-9 grow-0 shrink-0 bg-[hsl(var(--card))]/80 dark:bg-neutral-900/80 backdrop-blur flex items-center justify-between border-y">
+	class="sticky top-0 h-10 grow-0 shrink-0 bg-[hsl(var(--card))]/80 dark:bg-neutral-900/80 backdrop-blur flex items-center justify-between border-y z-10">
 	<nav class="grow flex">
 		<Button variant="ghost" href="{base}/">Me</Button>
 		<Separator orientation="vertical" />
 		<Button variant="ghost" href="{base}/skills">Skills</Button>
 		<Separator orientation="vertical" />
+		<!--		<Button variant="ghost" href="{base}/projects">Projects</Button>-->
+		<!--		<Separator orientation="vertical" />-->
 		<Button variant="ghost" href="{base}/contact">Contact</Button>
 		<Separator orientation="vertical" />
 	</nav>
@@ -78,10 +80,11 @@
 	{@render children()}
 </main>
 <footer
-	class="sticky bottom-0 h-9 grow-0 shrink-0 bg-[hsl(var(--card))]/80 dark:bg-neutral-900/80 backdrop-blur flex items-center justify-between border-y px-4">
-	<p>{new Date().getFullYear()}</p>
-	<Separator orientation="vertical" class="ml-4" />
+	class="sticky bottom-0 h-10 grow-0 shrink-0 bg-[hsl(var(--card))]/80 dark:bg-neutral-900/80 backdrop-blur flex items-center justify-between border-y z-10">
+	<p class="px-4">{new Date().getFullYear()}</p>
+	<Separator orientation="vertical" />
 	<div class="grow"></div>
 	<Separator orientation="vertical" />
-	<Button variant="ghost" href="https://kit.svelte.dev/" class="gap-1"><p>Made with</p><p class="text-orange-500">SvelteKit</p></Button>
+	<Button variant="ghost" href="https://kit.svelte.dev/" class="gap-1"><p>Made with</p>
+		<p class="text-orange-500">SvelteKit</p></Button>
 </footer>

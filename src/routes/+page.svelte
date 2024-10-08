@@ -1,31 +1,44 @@
 <script lang="ts">
 	import * as Card from '$lib/components/ui/card';
+	import * as Avatar from '$lib/components/ui/avatar';
 	import { Badge } from '$lib/components/ui/badge';
 	import { Separator } from '$lib/components/ui/separator';
+	import Loader from '$lib/icons/Loader.svelte';
 </script>
 
 <svelte:head>
 	<title>Me | EA-Wardie</title>
 </svelte:head>
 
-<section>
-	<h1 class="-translate-x-1"><span class="text-sky-500">E</span>dward van <span class="text-emerald-500">T</span>onder</h1>
+<section class="flex flex-col max-sm:items-center">
+	<h1 class="-translate-x-1"><span class="text-sky-500">E</span>dward van <span class="text-emerald-500">T</span>onder
+	</h1>
 	<p>Welcome to my developer profile!</p>
 </section>
 
-<section class="w-full max-w-xl text-justify px-0.5 sm:px-0">
-	<p>
-		I am a <span class="text-rose-400">passionate</span> front-end developer with a focus on building dynamic and
-		responsive user interfaces.
-	</p>
-	<br>
-	<p>
-		With a strong command of modern frameworks.
-		I specialize in creating seamless web experiences that are both
-		<span class="text-emerald-400">functional</span> and <span class="text-sky-400">visually appealing</span>.
-		I am committed to writing clean, maintainable code and staying
-		updated with the latest trends in web development.
-	</p>
+<section class="flex flex-col-reverse sm:flex-row max-sm:items-center gap-6">
+	<div class="grow px-0.5 sm:px-0 max-sm:text-center">
+		<p>
+			I am a <span class="text-rose-400">passionate</span> front-end developer with a focus on building dynamic
+			and responsive user interfaces.
+		</p>
+		<br>
+		<p>
+			With a strong command of modern frameworks,
+			I specialize in creating seamless web experiences that are both
+			<span class="text-emerald-400">functional</span> and <span class="text-sky-400">visually appealing</span>.
+			I am committed to writing clean, maintainable code and staying
+			updated with the latest trends in web development.
+		</p>
+	</div>
+	<Card.Root class="w-fit p-4">
+		<Avatar.Root class="w-64 h-64 rounded-none" delayMs={500}>
+			<Avatar.Image src="/profile_image.jpg" />
+			<Avatar.Fallback class="rounded-none bg-transparent">
+				<Loader class="w-20 h-20" />
+			</Avatar.Fallback>
+		</Avatar.Root>
+	</Card.Root>
 </section>
 
 <section class="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -69,6 +82,9 @@
 			</blockquote>
 		</Card.Content>
 	</Card.Root>
+</section>
+
+<section>
 	<Card.Root class="md:col-span-3">
 		<Card.Header>
 			<Card.Title>Career Highlights</Card.Title>
@@ -90,7 +106,8 @@
 			<Separator class="w-full lg:max-w-xs" />
 			<div>
 				<div class="flex items-center gap-2">
-					<a class="text-green-400 hover:underline" href="https://xtrapolate.io/"><h4>Xtrapolate</h4></a>
+					<a class="text-green-400 hover:underline" href="https://xtrapolate.io/" target="_blank"><h4>
+						Xtrapolate</h4></a>
 					<Badge class="rounded-full">2018 - 2019</Badge>
 				</div>
 				<article>
@@ -104,13 +121,15 @@
 			<Separator class="w-full lg:max-w-xs" />
 			<div>
 				<div class="flex items-center gap-2">
-					<a class="text-cyan-400 hover:underline" href="https://www.fitt.ai/"><h4>Fitt Talent</h4></a>
+					<a class="text-cyan-400 hover:underline" href="https://www.fitt.ai/" target="_blank">
+						<h4>Fitt Talent</h4>
+					</a>
 					<Badge class="rounded-full">2019 - 2023</Badge>
 				</div>
 				<article>
 					At Fitt Talent, I specialized in building dynamic, real-time KPI software using Laravel and Vue to
 					manage employee
-					ranking and performance metrics. My work focused on developing systems that could process and
+					rating and performance metrics. My work focused on developing systems that could process and
 					display real-time data
 					efficiently, ensuring accurate and responsive workplace performance evaluations.
 				</article>
@@ -118,7 +137,8 @@
 			<Separator class="w-full lg:max-w-xs" />
 			<div>
 				<div class="flex items-center gap-2">
-					<a class="text-pink-500 hover:underline" href="https://www.snappi-group.com/"><h4>Snappi Group of
+					<a class="text-pink-500 hover:underline" href="https://www.snappi-group.com/" target="_blank"><h4>
+						Snappi Group of
 						Companies</h4></a>
 					<Badge class="rounded-full">2023 - Now</Badge>
 				</div>
