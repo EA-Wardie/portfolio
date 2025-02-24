@@ -12,6 +12,7 @@
 	import * as AlertDialog from '$lib/components/ui/alert-dialog';
 
 	let { children } = $props();
+
 </script>
 
 <ModeWatcher />
