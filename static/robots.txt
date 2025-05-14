@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Specify your sitemap
+Sitemap: https://edwardvantonder.dev/sitemap.xml
