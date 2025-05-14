@@ -6,9 +6,7 @@
 	import Reddit from '$lib/icons/Reddit.svelte';
 	import Discord from '$lib/icons/Discord.svelte';
 	import LightDark from '$lib/icons/LightDark.svelte';
-	import { Button, buttonVariants } from '$lib/components/ui/button';
-	import Social from '$lib/icons/Social.svelte';
-	import * as AlertDialog from '$lib/components/ui/alert-dialog';
+	import { Button } from '$lib/components/ui/button';
 	import { page } from '$app/state';
 
 	let { children } = $props();
@@ -59,46 +57,6 @@
 					<Discord class="h-6 w-6" />
 				</Button>
 			</div>
-			<AlertDialog.Root>
-				<AlertDialog.Trigger class="block sm:hidden {buttonVariants({ variant: 'ghost' })}">
-					<Social class="h-6 w-6" />
-				</AlertDialog.Trigger>
-				<AlertDialog.Content>
-					<AlertDialog.Header>
-						<AlertDialog.Title>Get in touch</AlertDialog.Title>
-						<AlertDialog.Description>
-							<div class="flex justify-center gap-4 py-4">
-								<Button
-									variant="outline"
-									href="https://github.com/EA-Wardie/"
-									target="_blank"
-								>
-									<Github class="h-8 w-8" />
-								</Button>
-								<Button
-									variant="outline"
-									href="https://www.reddit.com/user/eawardie/"
-									target="_blank"
-								>
-									<Reddit class="h-8 w-8" />
-								</Button>
-								<Button
-									variant="outline"
-									href="https://discordapp.com/users/214383922052595712/"
-									target="_blank"
-								>
-									<Discord class="h-8 w-8" />
-								</Button>
-							</div>
-						</AlertDialog.Description>
-					</AlertDialog.Header>
-					<AlertDialog.Footer>
-						<AlertDialog.Cancel class={buttonVariants({ variant: 'default' })}
-							>Close</AlertDialog.Cancel
-						>
-					</AlertDialog.Footer>
-				</AlertDialog.Content>
-			</AlertDialog.Root>
 		</nav>
 	</header>
 	<main class="mx-auto flex w-full max-w-7xl grow flex-col gap-12 p-4 md:p-12">
@@ -111,9 +69,31 @@
 		<Separator orientation="vertical" />
 		<div class="grow"></div>
 		<Separator orientation="vertical" />
-		<Button variant="ghost" href="https://kit.svelte.dev/" target="_blank" class="gap-1"
-			><p>Made with</p>
-			<p class="text-orange-500">SvelteKit</p></Button
+		<nav class="flex sm:hidden">
+			<Button variant="ghost" href="https://github.com/EA-Wardie/" target="_blank">
+				<Github class="h-6 w-6" />
+			</Button>
+			<Separator orientation="vertical" />
+			<Button variant="ghost" href="https://www.reddit.com/user/eawardie/" target="_blank">
+				<Reddit class="h-6 w-6" />
+			</Button>
+			<Separator orientation="vertical" />
+			<Button
+				variant="ghost"
+				href="https://discordapp.com/users/214383922052595712/"
+				target="_blank"
+			>
+				<Discord class="h-6 w-6" />
+			</Button>
+		</nav>
+		<Button
+			variant="ghost"
+			href="https://kit.svelte.dev/"
+			target="_blank"
+			class="gap-1 max-sm:hidden"
 		>
+			<p>Made with</p>
+			<p class="text-orange-500">SvelteKit</p>
+		</Button>
 	</footer>
 </div>
