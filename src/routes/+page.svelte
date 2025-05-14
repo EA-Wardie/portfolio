@@ -1,9 +1,8 @@
 <script lang="ts">
 	import * as Card from '$lib/components/ui/card';
-	import * as Avatar from '$lib/components/ui/avatar';
 	import { Badge } from '$lib/components/ui/badge';
 	import { Separator } from '$lib/components/ui/separator';
-	import Loader from '$lib/icons/Loader.svelte';
+	import profileImage from '$lib/assets/profile_image.jpg';
 </script>
 
 <svelte:head>
@@ -32,13 +31,8 @@
 			maintainable code and staying updated with the latest trends in web development.
 		</p>
 	</div>
-	<Card.Root class="w-fit p-4">
-		<Avatar.Root class="h-64 w-64 rounded-none" delayMs={500}>
-			<Avatar.Image src="/profile_image.jpg" />
-			<Avatar.Fallback class="rounded-none bg-transparent">
-				<Loader class="h-20 w-20" />
-			</Avatar.Fallback>
-		</Avatar.Root>
+	<Card.Root class="w-fit p-6">
+		<img src={profileImage} alt="My face" />
 	</Card.Root>
 </section>
 
