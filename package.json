@@ -29,6 +29,7 @@
 	"type": "module",
 	"dependencies": {
 		"bits-ui": "^0.21.16",
+		"caniuse-lite": "^1.0.30001718",
 		"clsx": "^2.1.1",
 		"embla-carousel-svelte": "^8.3.0",
 		"mode-watcher": "^0.4.1",
