@@ -2,7 +2,7 @@
 	import * as Card from '$lib/components/ui/card';
 	import { Badge } from '$lib/components/ui/badge';
 	import { Separator } from '$lib/components/ui/separator';
-	import profileImage from '$lib/assets/profile_image.jpg';
+	import profileImage from '$lib/assets/profile_image.jpeg';
 </script>
 
 <svelte:head>
