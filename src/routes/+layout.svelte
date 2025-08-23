@@ -29,6 +29,18 @@
 		<Square
 			class="animate-duration-[50000ms] absolute top-30 left-30 rotate-12 animate-spin opacity-5 max-md:hidden"
 		/>
+		<Triangle
+			class="animate-duration-[50000ms] absolute right-10 bottom-24 -rotate-12 animate-spin opacity-5 max-md:hidden"
+		/>
+		<Circle
+			class="animate-duration-[8000ms] absolute right-34 bottom-34 animate-bounce opacity-5 max-md:hidden"
+		/>
+		<Square
+			class="animate-duration-[50000ms] absolute bottom-24 left-10 rotate-12 animate-spin opacity-5 max-md:hidden"
+		/>
+		<Organic
+			class="animate-shake animate-duration-[12000ms] absolute bottom-34 left-38 opacity-5 max-md:hidden"
+		/>
 	</main>
 	<footer
 		class="sticky bottom-0 z-10 flex h-10 shrink-0 grow-0 items-center justify-between border-y bg-[hsl(var(--card))]/80 backdrop-blur dark:bg-neutral-900/80"
