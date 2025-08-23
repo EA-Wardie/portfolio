@@ -2,13 +2,13 @@
 	import '../app.css';
 	import Github from '$lib/components/social/Github.svelte';
 	import Reddit from '$lib/components/social/Reddit.svelte';
-	import Discord from '$lib/components/social/Discord.svelte';
 	import { Button } from '$lib/components/ui/button';
 	import LinkedIn from '$lib/components/social/LinkedIn.svelte';
 	import Triangle from '$lib/components/shapes/Triangle.svelte';
 	import Square from '$lib/components/shapes/Square.svelte';
 	import Circle from '$lib/components/shapes/Circle.svelte';
 	import Organic from '$lib/components/shapes/Organic.svelte';
+	import Instragram from '$lib/components/social/Instragram.svelte';
 
 	let { children } = $props();
 </script>
@@ -36,51 +36,55 @@
 		<nav class="flex">
 			<Button
 				variant="ghost"
-				class="h-10"
+				size="icon"
+				class="size-10"
 				href="https://github.com/EA-Wardie"
 				target="_blank"
 			>
-				<Github />
+				<Github class="size-7" />
 			</Button>
 			<div class="h-10 border-r"></div>
 			<Button
 				variant="ghost"
-				class="h-10"
-				href="https://za.linkedin.com/in/edward-adriaan-van-tonder-474607180"
+				size="icon"
+				class="size-10"
+				href="https://www.instagram.com/eawardie"
 				target="_blank"
 			>
-				<LinkedIn />
+				<Instragram class="size-6" />
 			</Button>
 			<div class="h-10 border-r"></div>
 			<Button
 				variant="ghost"
-				class="h-10"
+				size="icon"
+				class="size-10"
 				href="https://www.reddit.com/user/eawardie"
 				target="_blank"
 			>
-				<Reddit />
+				<Reddit class="size-6" />
 			</Button>
 			<div class="h-10 border-r"></div>
 			<Button
 				variant="ghost"
-				class="h-10"
-				href="https://discordapp.com/users/214383922052595712"
+				size="icon"
+				class="size-10"
+				href="https://za.linkedin.com/in/edward-adriaan-van-tonder-474607180"
 				target="_blank"
 			>
-				<Discord />
+				<LinkedIn class="size-6.5" />
 			</Button>
 			<div class="h-10 border-r"></div>
 		</nav>
 		<div class="flex">
 			<div class="h-10 border-r"></div>
 			<Button
-				class="h-10 gap-1.5"
+				class="h-10 gap-2"
 				variant="ghost"
 				href="https://kit.svelte.dev/"
 				target="_blank"
 			>
-				<span>Made with</span>
-				<span class="text-orange-500">SvelteKit</span>
+				<span>Built with</span>
+				<span class="font-semibold text-orange-500">SvelteKit</span>
 			</Button>
 		</div>
 	</footer>

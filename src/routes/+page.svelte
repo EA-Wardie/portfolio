@@ -201,54 +201,168 @@
 	<Card.Root>
 		<Card.Content class="flex flex-col gap-4">
 			<div>
-				<div class="flex items-center gap-2">
-					<h4>Freelance</h4>
-					<Badge class="rounded-full">Ongoing</Badge>
-				</div>
+				<h4>Freelance</h4>
 				<Card.Description>Personal and non-profit websites</Card.Description>
+				<Badge class="mt-2">Ongoing</Badge>
 			</div>
 			<div class="border-b"></div>
 			<div>
-				<div class="flex items-center gap-2">
-					<a
-						class="text-green-400 hover:underline"
-						href="https://xtrapolate.io/"
-						target="_blank"
-					>
-						<h4>Xtrapolate</h4>
-					</a>
-					<Badge class="rounded-full">2018 - 2019</Badge>
-				</div>
-				<Card.Description>ERP and gamified web apps</Card.Description>
-			</div>
-			<div class="border-b"></div>
-			<div>
-				<div class="flex items-center gap-2">
-					<a
-						class="text-cyan-400 hover:underline"
-						href="https://www.fitt.ai/"
-						target="_blank"
-					>
-						<h4>Fitt Talent</h4>
-					</a>
-					<Badge class="rounded-full">2019 - 2023</Badge>
-				</div>
-				<Card.Description
-					>Real-time KPI software for employee performance metrics</Card.Description
+				<a
+					class="text-green-400 hover:underline"
+					href="https://xtrapolate.io/"
+					target="_blank"
 				>
+					<h4>Xtrapolate</h4>
+				</a>
+				<Card.Description>ERP systems and gamified web apps</Card.Description>
+				<Badge class="mt-2">2018 - 2019</Badge>
 			</div>
 			<div class="border-b"></div>
 			<div>
-				<div class="flex items-center gap-2">
-					<a
-						class="text-pink-500 hover:underline"
-						href="https://www.snappi-group.com/"
-						target="_blank"><h4>Snappi Group of Companies</h4></a
-					>
-					<Badge class="rounded-full">2023 - Now</Badge>
-				</div>
+				<a
+					class="text-cyan-400 hover:underline"
+					href="https://www.fitt.ai/"
+					target="_blank"
+				>
+					<h4>Fitt Talent</h4>
+				</a>
+				<Card.Description>
+					Real-time KPI software for employee performance metrics
+				</Card.Description>
+				<Badge class="mt-2">2019 - 2023</Badge>
+			</div>
+			<div class="border-b"></div>
+			<div>
+				<a
+					class="text-pink-500 hover:underline"
+					href="https://www.snappi-group.com/"
+					target="_blank"><h4>Snappi Group of Companies</h4></a
+				>
 				<Card.Description>ERP and e-commerce platforms on web and mobile</Card.Description>
+				<Badge class="mt-2">2023 - Now</Badge>
 			</div>
 		</Card.Content>
 	</Card.Root>
+</section>
+
+<section class="grid gap-4">
+	<h2>Notable Projects</h2>
+	<div class="grid gap-6 md:grid-cols-2">
+		<Card.Root>
+			<Card.Content class="flex flex-col gap-4">
+				<div>
+					<a
+						class="text-pink-500 hover:underline"
+						href="https://getsnappi.com"
+						target="_blank"
+					>
+						<h4>Getsnappi</h4>
+					</a>
+					<Card.Description>
+						E-commerce website with accompanying mobile applications.
+					</Card.Description>
+					<div class="mt-2 flex gap-2">
+						<Badge
+							target="_blank"
+							href="https://play.google.com/store/apps/details?id=com.snappi.snappistore"
+						>
+							Play Store App
+						</Badge>
+						<Badge
+							target="_blank"
+							href="https://apps.apple.com/za/app/snappi-store/id6504567692"
+						>
+							App Store App
+						</Badge>
+					</div>
+				</div>
+			</Card.Content>
+		</Card.Root>
+		<Card.Root>
+			<Card.Content class="flex flex-col gap-4">
+				<div>
+					<a
+						class="text-blue-600 hover:underline"
+						href="https://play.google.com/store/apps/details?id=com.getsnappi.ultra"
+						target="_blank"
+					>
+						<h4>Ultra Liquors</h4>
+					</a>
+					<Card.Description>E-commerce mobile applications.</Card.Description>
+					<div class="mt-2 flex gap-2">
+						<Badge
+							target="_blank"
+							href="https://play.google.com/store/apps/details?id=com.getsnappi.ultra"
+						>
+							Play Store App
+						</Badge>
+						<Badge
+							target="_blank"
+							href="https://apps.apple.com/za/app/ultra-liquors/id6450511695"
+						>
+							App Store App
+						</Badge>
+					</div>
+				</div>
+			</Card.Content>
+		</Card.Root>
+		<Card.Root>
+			<Card.Content class="flex flex-col gap-4">
+				<div>
+					<a
+						class="text-rose-600 hover:underline"
+						href="https://crownonline.co.za"
+						target="_blank"
+					>
+						<h4>Crown Online</h4>
+					</a>
+					<Card.Description>
+						E-commerce website with accompanying mobile applications.
+					</Card.Description>
+					<div class="mt-2 flex gap-2">
+						<Badge
+							target="_blank"
+							href="https://play.google.com/store/apps/details?id=com.snappi.crownnational"
+						>
+							Play Store App
+						</Badge>
+						<Badge
+							target="_blank"
+							href="https://apps.apple.com/za/app/crown-national/id6743119321"
+						>
+							App Store App
+						</Badge>
+					</div>
+				</div>
+			</Card.Content>
+		</Card.Root>
+		<Card.Root>
+			<Card.Content class="flex flex-col gap-4">
+				<div>
+					<a
+						class="text-red-600 hover:underline"
+						href="https://play.google.com/store/apps/details?id=com.snappi.libertyliquors"
+						target="_blank"
+					>
+						<h4>Liberty Liquors</h4>
+					</a>
+					<Card.Description>E-commerce mobile applications.</Card.Description>
+					<div class="mt-2 flex gap-2">
+						<Badge
+							target="_blank"
+							href="https://play.google.com/store/apps/details?id=com.snappi.libertyliquors"
+						>
+							Play Store App
+						</Badge>
+						<Badge
+							target="_blank"
+							href="https://apps.apple.com/za/app/liberty-liquors/id6738695834"
+						>
+							App Store App
+						</Badge>
+					</div>
+				</div>
+			</Card.Content>
+		</Card.Root>
+	</div>
 </section>
