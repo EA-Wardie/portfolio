@@ -16,6 +16,13 @@
 	import PHP from '$lib/components/languages/PHP.svelte';
 	import HTML from '$lib/components/languages/HTML.svelte';
 	import CSS from '$lib/components/languages/CSS.svelte';
+	import MySQL from '$lib/components/services/MySQL.svelte';
+	import PostgreSQL from '$lib/components/services/PostgreSQL.svelte';
+	import SQLite from '$lib/components/services/SQLite.svelte';
+	import NodeJS from '$lib/components/services/NodeJS.svelte';
+	import AWS from '$lib/components/services/AWS.svelte';
+	import NginX from '$lib/components/services/NginX.svelte';
+	import Sentry from '$lib/components/services/Sentry.svelte';
 </script>
 
 <svelte:head>
@@ -62,7 +69,7 @@
 
 		<Card.Root class="transition-shadow hover:shadow-lg hover:shadow-white/30">
 			<Card.Header>
-				<Card.Title>8 years of work experience</Card.Title>
+				<Card.Title>7+ years of work experience</Card.Title>
 				<Card.Description>Experience</Card.Description>
 			</Card.Header>
 		</Card.Root>
@@ -149,11 +156,72 @@
 			</Card.Header>
 		</Card.Root>
 
+		<Card.Root class="transition-shadow hover:shadow-lg hover:shadow-indigo-600/30">
+			<Card.Header class="flex items-center justify-center gap-4">
+				<Sentry />
+				<div class="h-10 border-r"></div>
+				<h3>Sentry</h3>
+			</Card.Header>
+		</Card.Root>
+
 		<Card.Root class="transition-shadow hover:shadow-lg hover:shadow-blue-500/30">
 			<Card.Header class="flex items-center justify-center gap-4">
 				<Docker />
 				<div class="h-10 border-r"></div>
 				<h3>Docker</h3>
+			</Card.Header>
+		</Card.Root>
+	</div>
+</section>
+
+<section class="grid gap-4">
+	<h2>Services</h2>
+	<div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+		<Card.Root class="transition-shadow hover:shadow-lg hover:shadow-white/30">
+			<Card.Header class="flex items-center justify-center gap-4">
+				<MySQL />
+				<div class="h-10 border-r"></div>
+				<h3>MySQL</h3>
+			</Card.Header>
+		</Card.Root>
+
+		<Card.Root class="transition-shadow hover:shadow-lg hover:shadow-sky-700/30">
+			<Card.Header class="flex items-center justify-center gap-4">
+				<PostgreSQL />
+				<div class="h-10 border-r"></div>
+				<h3>PostgreSQL</h3>
+			</Card.Header>
+		</Card.Root>
+
+		<Card.Root class="transition-shadow hover:shadow-lg hover:shadow-blue-600/30">
+			<Card.Header class="flex items-center justify-center gap-4">
+				<SQLite />
+				<div class="h-10 border-r"></div>
+				<h3>SQLite</h3>
+			</Card.Header>
+		</Card.Root>
+
+		<Card.Root class="transition-shadow hover:shadow-lg hover:shadow-emerald-600/30">
+			<Card.Header class="flex items-center justify-center gap-4">
+				<NodeJS />
+				<div class="h-10 border-r"></div>
+				<h3>NodeJS</h3>
+			</Card.Header>
+		</Card.Root>
+
+		<Card.Root class="transition-shadow hover:shadow-lg hover:shadow-orange-600/30">
+			<Card.Header class="flex items-center justify-center gap-4">
+				<AWS />
+				<div class="h-10 border-r"></div>
+				<h3>AWS</h3>
+			</Card.Header>
+		</Card.Root>
+
+		<Card.Root class="transition-shadow hover:shadow-lg hover:shadow-emerald-600/30">
+			<Card.Header class="flex items-center justify-center gap-4">
+				<NginX />
+				<div class="h-10 border-r"></div>
+				<h3>NginX</h3>
 			</Card.Header>
 		</Card.Root>
 	</div>
@@ -251,88 +319,108 @@
 		<Card.Root>
 			<Card.Content class="flex flex-col gap-4">
 				<div>
-					<a
-						class="text-pink-500 hover:underline"
-						href="https://getsnappi.com"
-						target="_blank"
-					>
-						<h4>Getsnappi</h4>
-					</a>
-					<Card.Description>
-						E-commerce website with accompanying mobile applications.
-					</Card.Description>
-					<div class="mt-2 flex gap-2">
+					<div class="flex items-center gap-2">
+						<a
+							class="text-pink-500 hover:underline"
+							href="https://getsnappi.com"
+							target="_blank"
+						>
+							<h4>Getsnappi</h4>
+						</a>
 						<Badge
 							target="_blank"
 							href="https://play.google.com/store/apps/details?id=com.snappi.snappistore"
 						>
-							Play Store App
+							Google App
 						</Badge>
 						<Badge
 							target="_blank"
 							href="https://apps.apple.com/za/app/snappi-store/id6504567692"
 						>
-							App Store App
+							Apple App
 						</Badge>
 					</div>
+					<Card.Description class="mt-2">
+						E-commerce website with accompanying mobile applications.
+					</Card.Description>
 				</div>
 			</Card.Content>
 		</Card.Root>
 		<Card.Root>
 			<Card.Content class="flex flex-col gap-4">
 				<div>
-					<a
-						class="text-blue-600 hover:underline"
-						href="https://play.google.com/store/apps/details?id=com.getsnappi.ultra"
-						target="_blank"
-					>
-						<h4>Ultra Liquors</h4>
-					</a>
-					<Card.Description>E-commerce mobile applications.</Card.Description>
-					<div class="mt-2 flex gap-2">
+					<div class="flex items-center gap-2">
+						<h4 class="text-blue-600">Ultra Liquors</h4>
 						<Badge
 							target="_blank"
 							href="https://play.google.com/store/apps/details?id=com.getsnappi.ultra"
 						>
-							Play Store App
+							Google App
 						</Badge>
 						<Badge
 							target="_blank"
 							href="https://apps.apple.com/za/app/ultra-liquors/id6450511695"
 						>
-							App Store App
+							Apple App
 						</Badge>
 					</div>
+					<Card.Description class="mt-2">
+						E-commerce mobile applications.
+					</Card.Description>
 				</div>
 			</Card.Content>
 		</Card.Root>
 		<Card.Root>
 			<Card.Content class="flex flex-col gap-4">
 				<div>
-					<a
-						class="text-rose-600 hover:underline"
-						href="https://crownonline.co.za"
-						target="_blank"
-					>
-						<h4>Crown Online</h4>
-					</a>
-					<Card.Description>
-						E-commerce website with accompanying mobile applications.
-					</Card.Description>
-					<div class="mt-2 flex gap-2">
+					<div class="flex items-center gap-2">
+						<a
+							class="text-rose-600 hover:underline"
+							href="https://crownonline.co.za"
+							target="_blank"
+						>
+							<h4>Crown Online</h4>
+						</a>
 						<Badge
 							target="_blank"
 							href="https://play.google.com/store/apps/details?id=com.snappi.crownnational"
 						>
-							Play Store App
+							Google App
 						</Badge>
 						<Badge
 							target="_blank"
 							href="https://apps.apple.com/za/app/crown-national/id6743119321"
 						>
-							App Store App
+							Apple App
 						</Badge>
 					</div>
+					<Card.Description class="mt-2">
+						E-commerce website with accompanying mobile applications.
+					</Card.Description>
+				</div>
+			</Card.Content>
+		</Card.Root>
+		<Card.Root>
+			<Card.Content class="flex flex-col gap-4">
+				<div>
+					<div class="flex items-center gap-2">
+						<h4 class="text-red-600">Liberty Liquors</h4>
+						<Badge
+							target="_blank"
+							href="https://play.google.com/store/apps/details?id=com.snappi.libertyliquors"
+						>
+							Google App
+						</Badge>
+						<Badge
+							target="_blank"
+							href="https://apps.apple.com/za/app/liberty-liquors/id6738695834"
+						>
+							Apple App
+						</Badge>
+					</div>
+					<Card.Description class="mt-2">
+						E-commerce mobile applications.
+					</Card.Description>
 				</div>
 			</Card.Content>
 		</Card.Root>
@@ -340,27 +428,15 @@
 			<Card.Content class="flex flex-col gap-4">
 				<div>
 					<a
-						class="text-red-600 hover:underline"
-						href="https://play.google.com/store/apps/details?id=com.snappi.libertyliquors"
+						class="text-emerald-600 hover:underline"
+						href="https:justsnake.cc"
 						target="_blank"
 					>
-						<h4>Liberty Liquors</h4>
+						<h4>Just Snake</h4>
 					</a>
-					<Card.Description>E-commerce mobile applications.</Card.Description>
-					<div class="mt-2 flex gap-2">
-						<Badge
-							target="_blank"
-							href="https://play.google.com/store/apps/details?id=com.snappi.libertyliquors"
-						>
-							Play Store App
-						</Badge>
-						<Badge
-							target="_blank"
-							href="https://apps.apple.com/za/app/liberty-liquors/id6738695834"
-						>
-							App Store App
-						</Badge>
-					</div>
+					<Card.Description class="mt-2">
+						Very simple snake game demoing reactive UIs.
+					</Card.Description>
 				</div>
 			</Card.Content>
 		</Card.Root>
