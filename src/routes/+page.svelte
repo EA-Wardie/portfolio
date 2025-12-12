@@ -350,7 +350,7 @@
 			<Card.Content class="flex flex-col gap-4">
 				<div>
 					<div class="flex items-center gap-2">
-						<h4 class="text-blue-600">Ultra Liquors</h4>
+						<h4 class="text-blue-500">Ultra Liquors</h4>
 						<Badge
 							target="_blank"
 							href="https://play.google.com/store/apps/details?id=com.getsnappi.ultra"
@@ -404,7 +404,7 @@
 			<Card.Content class="flex flex-col gap-4">
 				<div>
 					<div class="flex items-center gap-2">
-						<h4 class="text-red-600">Liberty Liquors</h4>
+						<h4 class="text-white">Liberty Liquors</h4>
 						<Badge
 							target="_blank"
 							href="https://play.google.com/store/apps/details?id=com.snappi.libertyliquors"
@@ -436,6 +436,38 @@
 					</a>
 					<Card.Description class="mt-2">
 						Very simple snake game demoing reactive UIs.
+					</Card.Description>
+				</div>
+			</Card.Content>
+		</Card.Root>
+		<Card.Root>
+			<Card.Content class="flex flex-col gap-4">
+				<div>
+					<a
+						class="text-amber-600 hover:underline"
+						href="https://svelte-pwa-starter.eawardie-vt.workers.dev"
+						target="_blank"
+					>
+						<h4>PWA Starter</h4>
+					</a>
+					<Card.Description class="mt-2">
+						PWA starter template for a native-like web app experience.
+					</Card.Description>
+				</div>
+			</Card.Content>
+		</Card.Root>
+		<Card.Root>
+			<Card.Content class="flex flex-col gap-4">
+				<div>
+					<a
+						class="text-amber-200 hover:underline"
+						href="https://ruach-church.org"
+						target="_blank"
+					>
+						<h4>Ruach Church</h4>
+					</a>
+					<Card.Description class="mt-2">
+						Informational website for a local church group.
 					</Card.Description>
 				</div>
 			</Card.Content>
