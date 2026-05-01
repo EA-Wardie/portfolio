@@ -429,7 +429,7 @@
 				<div>
 					<a
 						class="text-emerald-600 hover:underline"
-						href="https:justsnake.cc"
+						href="https://justsnake.cc"
 						target="_blank"
 					>
 						<h4>Just Snake</h4>
